@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Modern Image Gallery</h1>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="city">City</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="abstract">Abstract</button>
+            </div>
+        </header>
+
+        <main class="gallery">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Mountain Lake" loading="lazy">
+                <div class="overlay">
+                    <h3>Mountain Lake</h3>
+                    <p>Serene mountain landscape</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="city">
+                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400" alt="City Skyline" loading="lazy">
+                <div class="overlay">
+                    <h3>City Skyline</h3>
+                    <p>Modern urban architecture</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="portrait">
+                <img src="https://res.cloudinary.com/enchanting/f_auto,q_70,w_1600,h_1066,c_fill/et-web/2019/12/Colosseum-in-Rome-Italy.-1.jpg" alt="Portrait" loading="lazy">
+                <div class="overlay">
+                    <h3>Architecture </h3>
+                    <p>Beautiful Architecture photography</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400" alt="Forest Path" loading="lazy">
+                <div class="overlay">
+                    <h3>Forest Path</h3>
+                    <p>Mystical forest trail</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://media.istockphoto.com/id/1597475039/photo/abstract-colorful-glass-background.jpg?s=612x612&w=0&k=20&c=Gv5iCYYzRnE7F_RwFDacJGmEgLfArYnkeyORu1umeZM=" alt="Abstract Art" loading="lazy">
+                <div class="overlay">
+                    <h3>Abstract Art</h3>
+                    <p>Colorful abstract composition</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="city">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaBkQzQg20wBoB4cuu9QGBMfhm8oQ_VnArqA&s" loading="lazy">
+                <div class="overlay">
+                    <h3>Night City</h3>
+                    <p>Urban lights and reflections</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Ocean Sunset" loading="lazy">
+                <div class="overlay">
+                    <h3>Ocean Sunset</h3>
+                    <p>Golden hour by the sea</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="portrait">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Man Portrait" loading="lazy">
+                <div class="overlay">
+                    <h3>Man Portrait</h3>
+                    <p>Professional headshot</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=400" alt="Color Splash" loading="lazy">
+                <div class="overlay">
+                    <h3>Color Splash</h3>
+                    <p>Vibrant color explosion</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+            <img id="lightbox-img" src="" alt="">
+            <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
